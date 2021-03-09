@@ -1,4 +1,4 @@
-# Swift-Study ☺︎
+# Swift-Study 😊
 > Xcode를 이용하여 실습해보기
 
 ## 공부 ▼
