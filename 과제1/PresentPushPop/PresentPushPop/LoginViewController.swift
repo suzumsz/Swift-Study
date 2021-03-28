@@ -8,24 +8,33 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var partTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-
         // Do any additional setup after loading the view.
     }
- 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    
+    @IBAction func loginComplete(_ sender: Any) {
+        guard let dvc = self.presentingViewController as? ViewController else { return }
+        dvc.part = self.partTextField.text
+        dvc.name = self.nameTextField.text
+        
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    
+    @IBAction func signupTouch(_ sender: Any) {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") else {
+            return
+        }
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+    
 }
+
