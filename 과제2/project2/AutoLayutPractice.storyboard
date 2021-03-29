@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ILp-6I-cSA">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout View Controller-->
+        <scene sceneID="dAW-PD-NwV">
+            <objects>
+                <viewController storyboardIdentifier="AutoLayoutViewController" id="ILp-6I-cSA" customClass="AutoLayoutViewController" customModule="project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="63U-Ig-peX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbO-TB-BRf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soptLogo" translatesAutoresizingMaskIntoConstraints="NO" id="a73-uN-97X">
+                                        <rect key="frame" x="17" y="48" width="62" height="23"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL1-9P-DPh">
+                                        <rect key="frame" x="228" y="44" width="132" height="32"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="프로필 작성하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="a73-uN-97X" firstAttribute="top" secondItem="MbO-TB-BRf" secondAttribute="top" constant="48" id="7Jw-0D-HJc"/>
+                                    <constraint firstAttribute="bottom" secondItem="oL1-9P-DPh" secondAttribute="bottom" constant="12" id="Ebj-fz-VdC"/>
+                                    <constraint firstItem="oL1-9P-DPh" firstAttribute="leading" secondItem="a73-uN-97X" secondAttribute="trailing" constant="149" id="IFr-vP-x6s"/>
+                                    <constraint firstItem="a73-uN-97X" firstAttribute="leading" secondItem="MbO-TB-BRf" secondAttribute="leading" constant="17" id="TKw-uX-uHD"/>
+                                    <constraint firstItem="oL1-9P-DPh" firstAttribute="top" secondItem="MbO-TB-BRf" secondAttribute="top" constant="44" id="kT7-c1-qwH"/>
+                                    <constraint firstAttribute="bottom" secondItem="a73-uN-97X" secondAttribute="bottom" constant="17" id="rkE-6a-wr1"/>
+                                    <constraint firstAttribute="trailing" secondItem="oL1-9P-DPh" secondAttribute="trailing" constant="15" id="sBH-Mm-xW0"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="BIG-Bk-ap3">
+                                <rect key="frame" x="0.0" y="88" width="375" height="420"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SOPT + NETWORKING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00O-SG-CoX">
+                                <rect key="frame" x="56" y="280" width="264" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6MQ-yd-yoD">
+                                <rect key="frame" x="56" y="317" width="264" height="3"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="대학생 연합 IT 창업 동아리의 네트워킹을 위한 플랫폼입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56c-H8-gsr">
+                                <rect key="frame" x="63" y="319" width="249" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e2D-ez-6cT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BIG-Bk-ap3" firstAttribute="leading" secondItem="e2D-ez-6cT" secondAttribute="leading" id="0LX-MI-S0z"/>
+                            <constraint firstItem="e2D-ez-6cT" firstAttribute="trailing" secondItem="00O-SG-CoX" secondAttribute="trailing" constant="55" id="Daj-gr-YFu"/>
+                            <constraint firstItem="MbO-TB-BRf" firstAttribute="top" secondItem="63U-Ig-peX" secondAttribute="top" id="JZY-Jl-5pz"/>
+                            <constraint firstItem="56c-H8-gsr" firstAttribute="leading" secondItem="e2D-ez-6cT" secondAttribute="leading" constant="63" id="KBV-MQ-CvP"/>
+                            <constraint firstItem="MbO-TB-BRf" firstAttribute="leading" secondItem="e2D-ez-6cT" secondAttribute="leading" id="L6b-9W-eyS"/>
+                            <constraint firstItem="MbO-TB-BRf" firstAttribute="trailing" secondItem="e2D-ez-6cT" secondAttribute="trailing" id="NxL-TX-Uq7"/>
+                            <constraint firstItem="BIG-Bk-ap3" firstAttribute="trailing" secondItem="e2D-ez-6cT" secondAttribute="trailing" id="PDM-Eo-S9k"/>
+                            <constraint firstItem="6MQ-yd-yoD" firstAttribute="leading" secondItem="63U-Ig-peX" secondAttribute="leading" constant="56" id="aDC-Fy-lpk"/>
+                            <constraint firstItem="e2D-ez-6cT" firstAttribute="trailing" secondItem="56c-H8-gsr" secondAttribute="trailing" constant="63" id="ePQ-qD-aKU"/>
+                            <constraint firstItem="00O-SG-CoX" firstAttribute="leading" secondItem="e2D-ez-6cT" secondAttribute="leading" constant="56" id="heO-v5-mGe"/>
+                            <constraint firstItem="6MQ-yd-yoD" firstAttribute="top" secondItem="00O-SG-CoX" secondAttribute="bottom" constant="229" id="j4P-G7-rdA"/>
+                            <constraint firstItem="BIG-Bk-ap3" firstAttribute="top" secondItem="MbO-TB-BRf" secondAttribute="bottom" id="om8-4G-0Xo"/>
+                            <constraint firstAttribute="trailing" secondItem="6MQ-yd-yoD" secondAttribute="trailing" constant="55" id="thn-Ug-tPa"/>
+                            <constraint firstItem="BIG-Bk-ap3" firstAttribute="top" secondItem="MbO-TB-BRf" secondAttribute="bottom" id="vBI-ZE-5NR"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="1800"/>
+                    <connections>
+                        <outlet property="profile_btn" destination="oL1-9P-DPh" id="HgZ-aY-xgj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiR-0T-Vri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239.19999999999999" y="140.39408866995075"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner" width="375" height="420"/>
+        <image name="soptLogo" width="62" height="23"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
