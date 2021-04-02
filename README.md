@@ -15,7 +15,7 @@
 | 목차 | 과제 날짜 | 과제 내용 | 이동 |  
 | :----------: | :----------: | :----------: | :----------: |
 | 1 | 21.03.06 | present/dismiss, push/pop, 화면 간 데이터 전달 | [과제 1](./과제1) |
-| 2 | 21.03.07 | AutoLayout, StackView, ScrollView | [과제 2](./과제2) |
-| 3 | 21.03.08 | Delegate Pattern, TableView, CollectionView | [과제 3](./과제3) |
+| 2 | 21.03.07 | AutoLayout, StackView, ScrollView, Floating btn event | [과제 2](./과제2) |
+| 3 | 21.03.08 | CollectionView | [과제 3](./과제3) |
 
 
